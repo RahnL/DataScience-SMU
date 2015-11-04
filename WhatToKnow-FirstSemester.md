@@ -26,6 +26,8 @@ Here's some suggestions
     * dictionarys and lists
     * connecting to a database
 
-  
-  
+# Getting Started
+- The biggest help for me this quarter has been connecting with classmates and collaborating on work.  It's hard, but don't be shy. Reach out to others in your classes, and start talking to them.
+- We created a Google Hangout that has an on-going discussion about upcoming assignments (and some social stuff too). Its extremely helpful, if nothing else just to have everyone else to ask "when's this due again?".
+- Be part of the community and discussions.
 
