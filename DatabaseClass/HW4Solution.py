@@ -11,6 +11,8 @@ original Source Code from
     Add graphing of histograms
     Added SQL portion 
     Code cleanup, etc.
+	And a whole bunch more.
+	
 """
 
 from collections import defaultdict
@@ -21,14 +23,15 @@ import urllib2
 
 #Read word list from a the source file
 #For each word, it removes whitespace and junk
-# (Not using. For reference only, in case I change my mind later)
-def load_words(filename='c:/temp/ospd.txt'):
+# This list is from https://raw.githubusercontent.com/dwyl/english-words/master/words.txt
+# has b bit over 350K words
+def load_words(filename='d:/words.txt'):
     with open(filename) as f:
         for word in f:
             yield word.rstrip()
-
+    
 # Reads word list from URL  
-def load_words_FromURL(filename="http://www.puzzlers.org/pub/wordlists/ospd.txt"):
+def load_words_FromURL(filename):
     data = urllib2.urlopen(filename).read().split("\n")
     return data
     
@@ -38,7 +41,7 @@ def load_words_FromURL(filename="http://www.puzzlers.org/pub/wordlists/ospd.txt"
 def get_anagrams(source):    
     d = defaultdict(list)
     for word in source:
-        key = "".join(sorted(word))
+        key = "".join(sorted(word)).replace("'","")
         d[key].append(word)
     return d
 
@@ -55,7 +58,7 @@ def print_anagrams(d):
         length = len(anagrams)
                 
         if length > 1:
-            print(key,anagrams)
+            #print(key,anagrams)
             counter += 1
     
             #see if this word has the most anagrams so far.            
@@ -99,6 +102,16 @@ def CreateAnagramTable():
     numberWords int NOT NULL,
     WordList varchar(500) NOT NULL) 
     """)
+    
+    # create the merrian-webster table, needed for last questions
+    c.execute("DROP TABLE IF EXISTS mw;") #allows for rerunning :)   
+    c.execute("""
+    CREATE TABLE mw (
+    MWAnagramID varchar(20) NOT NULL,
+    numberWords int NOT NULL,
+    WordList varchar(500) NOT NULL) 
+    """)
+        
     conn.commit()
 
 
@@ -112,7 +125,17 @@ def Insert_Anagrams(dict_Anag, tableName):
             ins = "insert into anagrams values ('%s', %d, '%s')" % (key, len(value), str(value).replace("'",""))
             c.execute(ins)
             count +=1
-        
+    else: 
+        for key, value in dict_Anag.iteritems():
+            try:
+                if (len(key)>1 and len(value)>1):                
+                    ins = "insert into mw values ('%s', %d, '%s')" % (key, len(value), str(value).replace("'",""))
+                    c.execute(ins)
+                    count +=1
+            except Exception, err:
+                print err
+                print ins
+
     conn.commit()
     print count, 'words inserted'
 
@@ -129,13 +152,29 @@ def GetNumberAnagramsFromOSPDList():
     print c.fetchone()[0]
 
 
+def GetHighestAnagramListFromOSPDList():
+    c.execute("select * from anagrams order by numberWords Desc limit 1")
+    print c.fetchone()
+
+#question 6
+def GetNumberAnagramsFromMWList():
+    c.execute("select count(*) from mw where numberWords>1")
+    print c.fetchone()[0]
+
+
+def GetHighestAnagramListFromMWList():
+    c.execute("select * from mw order by numberWords Desc limit 1")
+    print c.fetchone()
 
 def Main():
     #calculate the anagrams and do the stuff for q1-3
-    word_source = load_words_FromURL()
+    word_source = load_words_FromURL('http://www.puzzlers.org/pub/wordlists/ospd.txt')
+    mw_words=load_words_FromURL('https://raw.githubusercontent.com/dwyl/english-words/master/words.txt')
     # Alternate was to pass a word list in. 
     #word_source = ["eat","ate","tea","draper","parred", "stone", "tones", "onset", "tonse","bob","feet"]
-    dict_anagrams = get_anagrams(word_source)     
+    dict_anagrams = get_anagrams(word_source)
+    dict_mw = get_anagrams(mw_words)
+     
     print_anagrams(dict_anagrams)
 
     #Q4-6 - DB questions
@@ -145,6 +184,15 @@ def Main():
 
     print 'Question 4: How many anagrams:'
     GetNumberAnagramsFromOSPDList()
+    print 'Question 5: What is largest # of words with anagrams'
+    GetHighestAnagramListFromOSPDList()
+    
+    #repeat for large word set (350k+)
+    Insert_Anagrams(dict_mw, 'mw')
+    print 'Question 6: How many anagrams:'
+    GetNumberAnagramsFromMWList()
+    print 'Question 7: What is largest # of words with anagrams'
+    GetHighestAnagramListFromMWList()
     
 ###########################################
 # program entry point.
