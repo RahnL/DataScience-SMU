@@ -17,19 +17,27 @@ Here's some suggestions to get going faster
     * Go through them to get comfortable with terms like sigma, alpha, confidence, etc.
     * Go through the inferential statistics series multiple times. There are a lot of concepts in this that will be 
       repeated in class, and it will go into much more depth.
+    * Here are some search terms for things to start learning:  t-test, hypothesis test, analysis of variance (ANOVA), linear   regression, multiple regression.
     * I'd guess spending 20-30 hours going though this stuff ahead of time will pay off a lot. 
 - Professor Leonard youtube videos.  This professor videoed an entire semester of introduction to statistics.
   His videos are good if you need an introduction or refresher.  However, it's a full semester, so it takes a lot of time. 
 - There are other youtube videos on doing statistics. Find someone you like, and watch their stuff.
-- If you prefer to sit down with a text book and read it from cover to cover, try http://onlinestatbook.com/.  This helped me immensely with getting some basic concepts down.
+- If you prefer to sit down with a text book and read it from cover to cover, try http://onlinestatbook.com/.  
+- Another book is "The Radical Statistician" by J. Higgens Ed.D.  I wasn't able to find the fully book, but finding pdf's of chapters of it wasn't bad. If anyone finds the actual book, let me know so I give proper credit.
+- Other classes using the same book:
+    * Methods of data analysis, Oregon State:  http://stat512.cwick.co.nz/  (Not sure why it's a NZ domain.)
+
+To give a idea of the tests, the midterm took about 12 hours to complete, and was around 3000 words long.  Other people have said between 7-16 hours, and anywhere from 2000-4000 words written.  (Yes, this class has a lot of writing.  You'll write up a complete analysis for problems.)
 
 ### SAS
 You'll want to install a local copy of SAS.  The first two courses in statistics use this, and R comes later.
 The official documents say it takes 4-6 hours.  In reality, it took a lot longer.  (12ish hours.)  The better network connection you have, the faster it will go.  Use a hardwire, not wireless if possible.
 
-A number of people reported using SAS University edition, and liking it a lot better. The install is a lot smaller, only about a 1/2 hours.
+A number of people reported using SAS University edition, and liking it a lot better. It's a virtual machine you run locally, and connect to via a web browser. You can set it up to use local work folders to easier access data. (Which is the hard part to do if you use the version on SMU's citrix server.)
 
 People on Mac's have been having issues and have to use the citrix version. I don't know what their work-around have been besides installing on a virtual machine.
+
+SAS Univeristy also has a bunch of classes on how to use it.  I haven't gone through it yet, but they offer "Statistics I", which had ANOVA and Regression, two subjects covered in class.
 
 
 # Databases and Programming
@@ -38,6 +46,8 @@ People on Mac's have been having issues and have to use the citrix version. I do
     * dictionaries and lists
     * connecting to a database
 - In class, you can use version 2.7 or 3. Most the stuff we looked at was version 2.7.
+
+The midterm for this class took 12-14 hours, but it was collaborative. (Collaboration is highly engourages for everything in this class.) 
 
 
 # Other Stuff
@@ -50,9 +60,10 @@ People on Mac's have been having issues and have to use the citrix version. I do
 - Go to 2ds and poke around.  It's worth it to be familiar with the delivery mechanism that you will be using.  Practice using the mobile version - there are differences
 
 ## Crazy stories from the front line
-Everyone says "oh, that won't happen to me" and "I'm prepared for anything".  So, here are some things that came up during the quarter from various people in our cohort, all unexpected:
+Everyone says "oh, that won't happen to me" and "I'm prepared for anything".  So, here are some things that came up during the semester from various people in our cohort, all unexpected:
 - Emergency room visits for the kids or self
 - Tree falling on house
 - Roof leaks (different house than tree)
 - computer crashes
 - kid's wake up screaming from nightmares in the middle of class
+- The usual weather stuff: rain, floods, tornago warnings
