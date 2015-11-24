@@ -22,7 +22,8 @@ Here's some suggestions to get going faster
 - Professor Leonard youtube videos.  This professor videoed an entire semester of introduction to statistics.
   His videos are good if you need an introduction or refresher.  However, it's a full semester, so it takes a lot of time. 
 - There are other youtube videos on doing statistics. Find someone you like, and watch their stuff.
-- If you prefer to sit down with a text book and read it from cover to cover, try http://onlinestatbook.com/.  This helped me immensely with getting some basic concepts down.
+- If you prefer to sit down with a text book and read it from cover to cover, try http://onlinestatbook.com/.  
+- Another book is "The Radical Statistician" by J. Higgens Ed.D.  I wasn't able to find the fully book, but finding pdf's of chapters of it wasn't bad. If anyone finds the actual book, let me know so I give proper credit.
 
 To give a idea of the tests, the midterm took about 12 hours to complete, and was around 3000 words long.  Other people have said between 7-16 hours, and anywhere from 2000-4000 words written.  (Yes, this class has a lot of writing.  You'll write up a complete analysis for problems.)
 
