@@ -2,8 +2,10 @@
 This is a list of links that our collective group has been throwing around:
 
 # Statistics
+
 |Title | URL|
 ------|-----
+Penn State|https://onlinecourses.science.psu.edu/stat501/
 
 # R
 |Title | URL|
@@ -20,3 +22,4 @@ Codewars|http://www.codewars.com/
 # Other
 |Title | URL|
 ------|-----
+Bad Data|https://github.com/Quartz/bad-data-guide
