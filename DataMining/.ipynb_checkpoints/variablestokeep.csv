@@ -1,0 +1,36 @@
+,Section,Column,Variable Name,Description,Type
+RV,1.1,80,GENHLTH,Would you say that in general your health is:,Num
+EV,3.1,87,HLTHPLN1,"Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare, or Indian Health Service?",Num
+,3.2,88,PERSDOC2,"Do you have one person you think of as your personal doctor or health care provider? (If ""No"" ask ""Is there more than one or is there no person who you think of as your personal doctor or health care provider?"".)",Num 
+,3.3,89,MEDCOST,Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?,Num
+,3.4,90,CHECKUP1,"About how long has it been since you last visited a doctor for a routine checkup? [A routine checkup is a general physical exam, not an exam for a specific injury, illness, or condition.]",Num
+,4.1,91,EXERANY2,"During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?",Num
+,5.1,92,SLEPTIM1,"On average, how many hours of sleep do you get in a 24-hour period?",Num
+,6.1,94,CVDINFR4,"(Ever told) you had a heart attack, also called a myocardial infarction?
+",Num
+,6.2,95,CVDCRHD4,"(Ever told) you had angina or coronary heart disease?
+",Num
+,6.3,96,CVDSTRK3,"(Ever told) you had a stroke.
+",Num
+,6.4,97,ASTHMA3,"(Ever told) you had asthma?
+",Num
+,6.5,98,ASTHNOW,Do you still have asthma?,Num
+,6.6,99,CHCSCNCR,(Ever told) you had skin cancer?,Num
+,6.7,100,CHCOCNCR,(Ever told) you had any other types of cancer?,Num
+,6.8,101,CHCCOPD1,"(Ever told) you have Chronic Obstructive Pulmonary Disease or COPD, emphysema or chronic bronchitis?",Num
+,6.9,102,HAVARTH3,"on: (Ever told) you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia? (Arthritis diagnoses include: rheumatism, polymyalgia rheumatica; osteoarthritis (not osteporosis); tendonitis, bursitis, bunion, tennis elbow; carpal tunnel syndrome, tarsal tunnel syndrome; joint infection, etc.)",Num
+,6.10,103,ADDEPEV2,"(Ever told) you that you have a depressive disorder, including depression, major depression, dysthymia, or minor depression?",Num
+,6.11,104,CHCKIDNY,"(Ever told) you have kidney disease? Do NOT include kidney stones, bladder infection or incontinence.(Incontinence is not being able to control urine flow.)",Num
+,7.1,108,LASTDEN3,"How long has it been since you last visited a dentist or a dental clinic for any reason? Include visits to dental specialists, such as orthodontists.",Num
+,7.2,109,RMVTETH3,"How many of your permanent teeth have been removed because of tooth decay or gum disease? Include teeth lost to infection, but do not include teeth lost for other reasons, such as injury or orthodontics. (If wisdom teeth are removed because of tooth decay or gum disease, they should be included in the count for lost teeth)",Num
+,8.24,181,USEEQUIP,"Do you now have any health problem that requires you to use special equipment, such as a cane, a wheelchair, a special bed, or a special telephone? (Include occasional use or use in certain circumstances.)",Num
+,8.25,182,BLIND,"Are you blind or do you have serious difficulty seeing, even when wearing glasses?",Num
+,8.26,183,DECIDE,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?",Num
+,8.27,184,DIFFWALK,Do you have serious difficulty walking or climbing stairs?,Num
+,8.28,185,DIFFDRES,Do you have difficulty dressing or bathing?,Num
+,8.29,186,DIFFALON,"Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor?s office or shopping?",Num
+,9.1,187,SMOKE100,Have you smoked at least 100 cigarettes in your entire life?,Num
+,9.2,188,SMOKDAY2,"Do you now smoke cigarettes every day, some days, or not at all?",Num
+,9.3,189,STOPSMK2,"During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?",Num
+,9.4,190,LASTSMK2,"How long has it been since you last smoked a cigarette, even one or two puffs?",Num
+,9.5,192,USENOW3,"Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all? (Snus (Swedish for snuff) is a moist smokeless tobacco, usually sold in small pouches that are placed under the lip against the gum.)[Snus (rhymes with ?goose?)]",Num
