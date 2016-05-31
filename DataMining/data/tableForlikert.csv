@@ -1,0 +1,18 @@
+Yes,No,Don’t_know,Refused,Blank,Question,Subtable
+53928,394689,264,967,14816,Do you have a health problem that requires special equipment?,Demographics
+45110,400582,1714,1210,16048,Do you have serious difficulty concentrating or remembering?,Demographics
+23364,423923,820,1093,15464,Are you blind or do you have serious difficulty seeing?,Demographics
+79531,366311,1184,1108,16530,Do you have serious difficulty walking or climbing stairs?,Demographics
+19501,426982,363,982,16836,Do you have difficulty dressing or bathing?,Demographics
+34543,410930,769,1121,17301,Do you have difficulty doing errands alone?,Demographics
+195411,248500,1815,1044,17894,Have you smoked at least 100 cigarettes in you entire life?,Tobacco Use
+38198,27857,174,52,398383,"During past 12 months, have you stopped smoking a day or longer?",Tobacco Use
+425198,37642,934,890,0,Do you have any kind of health coverage?,Health Care Access
+49315,414132,941,275,1,Was ther a time in past 12 months were cost prohibited your need to see a doctor?,Health Care Access
+350011,112926,424,1299,4,"During past month, did you do any physical activities?",Exercise
+27841,434515,1969,348,0,(Ever told) you had a heart attack?,Chronic Health Conditions
+28511,432202,3578,373,0,(Ever told) you had angina or heart disease?,Chronic Health Conditions
+19198,444098,1107,261,0,(Ever told) you had a stroke?,Chronic Health Conditions
+61472,401687,1239,266,0,(Ever told) you had asthma?,Chronic Health Conditions
+42910,420373,1109,271,0,(Ever told) you had skin cancer?,Chronic Health Conditions
+44137,419324,869,332,0,(Ever told) you had any other kind of cancer?,Chronic Health Conditions
