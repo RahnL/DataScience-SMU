@@ -18,6 +18,8 @@ Swirl - Learn R, in R|http://swirlstats.com/
 |Title | URL|
 ------|-----
 Codewars|http://www.codewars.com/
+Sci-Kit Learn examples|http://scikit-learn.org/stable/tutorial/statistical_inference/settings.html
+
 
 # Other
 |Title | URL|
